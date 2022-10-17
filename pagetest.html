@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SilkPath</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/cssbase.css">
+</head>
+<body>
+
+
+
+
+
+
+    
+    <div class="corps">
+        <div class="imgarticle">
+            <div class="grosseimage">
+                <img src="image/cube1.jpg" alt="why" class="imgapparente" id="0">
+                <div class="bnext">
+                    <button onclick="next()" class="bnext2"><img src="image/Vector.png" alt=""></button>
+                </div>
+            </div>
+            <div class="listeimg">
+                <button onclick="img1()" class="bc"><img src="image/cube1.jpg" alt="" class="img1" id="1"></button>
+                <button onclick="img2()" class="bc"><img src="image/cube2.jpg" alt="" class="img2" id="2"></button>
+                <button onclick="img3()" class="bc"><img src="image/cube3.jpg" alt="" class="img3" id="3"></button>
+            </div>
+
+        </div>
+        <div class="infoproduit">
+            <h3>dromadaire</h3>
+            <div class="prix">
+               <strong>99$</strong>
+            </div>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis, iure quasi, odit sint hic facere tempore dolor eligendi a nisi culpa enim vitae quo.
+            </div>
+            <div class="number">
+                <div class="compteur">
+                    <div class="moins">
+                        <button onclick="moins()">
+                            -
+                        </button>
+                    </div>
+                    <div id="counting"></div>
+                    <div class="plus">
+                        <button onclick="plus()">
+                            +
+                        </button>
+                    </div>
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>selectionnez une taille</option>
+                    <option value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="4">L</option>
+                    <option value="5">XL</option>
+                  </select>
+            </div>
+
+            <div class="achatbuton">
+                <div class="achat ba">
+                    <button onclick="buy()" class="buy ba">acheter maintenant</button>
+                </div>
+                <div class="card ba">
+                    <button onclick="card()" class="card ba">ajouter une carte</button>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+
+
+        <!-- popup -->
+        <!-- <div class="buypop">
+            <div class="buypop2">
+                wow
+            </div>
+        </div> -->
+
+    </div>
+    <script src="style/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
