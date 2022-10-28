@@ -1,0 +1,32 @@
+.item_shop{
+    display: grid;
+    grid-template-columns: 33% 33% 1fr;
+}
+
+.card{
+    border: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.filtre{
+    text-align: left;
+}
+
+.input :hover {
+    transform: scale(1.2);
+}
+
+.categorie {
+    margin-top: 2px;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+
+
+/* ------------------------------------ */
+
