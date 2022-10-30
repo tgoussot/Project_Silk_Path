@@ -1,20 +1,20 @@
-.item_shop{
-    display: grid;
-    grid-template-columns: 33% 33% 1fr;
-}
-
-.card{
-    border: none;
+body {
+    background-color: #e5e5e5;
+    font-family: sans-serif;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 25% 1fr;
 }
+
+/* ----------------------------------- */
 
 .filtre{
     text-align: left;
 }
+
+
 
 .input :hover {
     transform: scale(1.2);
@@ -26,7 +26,82 @@
     margin-bottom: 3px;
 }
 
+.form-check {
+    display: grid;
+    grid-template-columns: 2vw 1fr;
+}
 
+.filtre h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.filtre h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.filtre label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
 
 /* ------------------------------------ */
 
+.card_item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33% 33% 1fr;
+}
+
+.block {
+    width: 20vw;
+    padding: 0;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+}
+
+.block_img {
+    width: 20vw;
+    height: 20vw;
+}
+
+
+.block_img .imgp2{
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+}
+
+.block_text .nomPara {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block_text .parametre {
+    background-color: green;
+    border-radius: 100%;
+    width: 3vw;
+    height: 3vw;
+    border: solid 2px black;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.block_text p {
+    margin: 0;
+}
+
+.block_text .nom {
+    margin-left: 0.5vw;
+    font-weight: bold;
+}
+
+
+.block_text .prix {
+    margin-left: 00.5vw;
+}
