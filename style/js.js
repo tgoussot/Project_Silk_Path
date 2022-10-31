@@ -1,7 +1,8 @@
 
 
 var compteur = 1;
-var numberp = 99;
+var numberp = 10;
+var taille = 0;
 document.getElementById("counting").innerText = compteur;
 function plus() {
     compteur = compteur + 1;
@@ -19,6 +20,8 @@ function moins() {
         document.getElementById("numberp").innerText = numberp * compteur;
     }
 }
+
+
 
 
 function buy() {
@@ -40,10 +43,22 @@ function img(){
         case 3 : x.setAttribute("src", "image/cube3.jpg");
             break;
     }
-    
 }
 function select(){
-    console.log( document.getElementById('select').options[0].value)
+    taille = Number(document.getElementById('select').value);
+    switch (taille) {
+        case 1 : numberp = 10; 
+            break;
+        case 2 : numberp = 20; 
+            break;
+        case 3 : numberp = 30;
+            break;
+        case 4 : numberp = 40;
+            break;
+        case 5 : numberp = 50;
+            break;
+    }
+    document.getElementById("numberp").innerText = numberp * compteur; 
 }
 
 

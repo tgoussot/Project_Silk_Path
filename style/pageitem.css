@@ -49,6 +49,7 @@
 }
 
 .grosseimage{
+    display: flex;
     grid-column: 1;
     width: 100%;
 }
