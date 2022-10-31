@@ -15,75 +15,81 @@
 
     
     <div class="corps">
-        <div class="imgarticle">
-            <div class="grosseimage">
-                <div class="imgapparente1">
-                    <img src="image/cube1.jpg" alt="why" class="imgapparente" id="0">
-                </div>
-            </div>
-            <div class="listeimg">
-                <button onclick="img1()" class="bc"><img src="image/cube1.jpg" alt="" class="img1" id="1"></button>
-                <button onclick="img2()" class="bc"><img src="image/cube2.jpg" alt="" class="img2" id="2"></button>
-                <button onclick="img3()" class="bc"><img src="image/cube3.jpg" alt="" class="img3" id="3"></button>
-                <button onclick="next()" class="bnext2"><img src="image/Vector.png" alt=""></button>
-            </div>
+        <div></div>
+        <div class="page">
 
-        </div>
-        <div class="infoproduit">
-            <h3>dromadaire</h3>
-            <div class="prix">
-               <strong>99$</strong>
-            </div>
-            <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis, iure quasi, odit sint hic facere tempore dolor eligendi a nisi culpa enim vitae quo.
-            </div>
-            <div class="number">
-                <div class="compteur">
-                    <div class="moins">
-                        <button onclick="moins()">
-                            -
-                        </button>
-                    </div>
-                    <div id="counting"></div>
-                    <div class="plus">
-                        <button onclick="plus()">
-                            +
-                        </button>
+            <div class="imgarticle">
+                <div class="grosseimage">
+                    <div class="imgapparente1">
+                        <img src="image/cube1.jpg" alt="why" class="imgapparente" id="0">
                     </div>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>selectionnez une taille</option>
-                    <option value="1">XS</option>
-                    <option value="2">S</option>
-                    <option value="3">M</option>
-                    <option value="4">L</option>
-                    <option value="5">XL</option>
-                  </select>
+                <div class="listeimg">
+                    <button onclick="img1()" class="bc"><img src="image/cube1.jpg" alt="" class="img1" id="1"></button>
+                    <button onclick="img2()" class="bc"><img src="image/cube2.jpg" alt="" class="img2" id="2"></button>
+                    <button onclick="img3()" class="bc"><img src="image/cube3.jpg" alt="" class="img3" id="3"></button>
+                    <button onclick="next()" class="bnext2"><img src="image/Vector.png" alt=""></button>
+                </div>
+
+            </div>
+            <div class="infoproduit">
+                <h3 class="name">dromadaire</h3>
+
+                <div class="data">
+                    <div class="prix">
+                        <strong> <span id="numberp">99</span>$</strong>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis, iure quasi, odit sint hic facere tempore dolor eligendi a nisi culpa enim vitae quo.
+                    </div>
+                </div>
+                <div class="number">
+                    <div class="compteur">
+                        <div class="moins">
+                            <button onclick="moins()">
+                                -
+                            </button>
+                        </div>
+                        <div id="counting"></div>
+                        <div class="plus">
+                            <button onclick="plus()">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    <select id="select" aria-label="Default select example">
+                        <option selected>selectionnez une taille</option>
+                        <option value="1">XS</option>
+                        <option value="2">S</option>
+                        <option value="3">M</option>
+                        <option value="4">L</option>
+                        <option value="5">XL</option>
+                    </select>
+                </div>
+
+                <div class="achatbuton">
+                    <div class="achat ba">
+                        <button onclick="buy()" class="buy ba">acheter maintenant</button>
+                    </div>
+                    <div class="card ba">
+                        <button onclick="card()" class="card ba">ajouter une carte</button>
+                    </div>
+                </div>
+
+
+                
             </div>
 
-            <div class="achatbuton">
-                <div class="achat ba">
-                    <button onclick="buy()" class="buy ba">acheter maintenant</button>
-                </div>
-                <div class="card ba">
-                    <button onclick="card()" class="card ba">ajouter une carte</button>
-                </div>
-            </div>
 
 
-            
+
+            <!-- popup -->
+            <!-- <div class="buypop">
+                <div class="buypop2">
+                    wow
+                </div>
+            </div> -->
         </div>
-
-
-
-
-        <!-- popup -->
-        <!-- <div class="buypop">
-            <div class="buypop2">
-                wow
-            </div>
-        </div> -->
-
     </div>
     <script src="style/js.js"></script>
 </body>

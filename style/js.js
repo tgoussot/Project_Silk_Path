@@ -1,20 +1,25 @@
 
 
-var compteur = 0;
+var compteur = 1;
+var numberp = 99;
 document.getElementById("counting").innerText = compteur;
 function plus() {
     compteur = compteur + 1;
     document.getElementById("counting").innerText = compteur;
+    document.getElementById("numberp").innerText = numberp * compteur;
 }
 function moins() {
-    if(compteur <= 0){
-        compteur = 0;
+    if(compteur <= 1){
+        compteur = 1;
+        document.getElementById("numberp").innerText = numberp * compteur;
     }
     else{
         compteur = compteur - 1;
         document.getElementById("counting").innerText = compteur;
+        document.getElementById("numberp").innerText = numberp * compteur;
     }
 }
+
 
 function buy() {
     $('.buypop').addClass('visible');
@@ -37,6 +42,10 @@ function img(){
     }
     
 }
+function select(){
+    console.log( document.getElementById('select').options[0].value)
+}
+
 
 function next(){
     if(y>= 3){

@@ -2,6 +2,11 @@
 
 .corps{
     display: grid;
+    grid-template-rows: auto;
+}
+
+.page{
+    display: grid;
     grid-template-columns: 50% 50%;
 }
 
@@ -70,6 +75,11 @@ h3{
     margin-bottom: 10%;
 }
 
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
 .description{
     margin-top: 5%;
     margin-bottom: 5%;
@@ -163,4 +173,85 @@ button{
 .bc{
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 1024px){
+
+    .number{
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #select{
+    margin-top: 3%;
+    margin-left: 0%;
+    width: 50%;
+    }
+
+    .achatbuton{
+        flex-direction: column;
+        margin-left: 0%;
+        width: 50%;
+        margin-top: 10%;
+    }
+
+    .achat{
+        margin-bottom: 3%;
+    }
+
+    .imgarticle{
+        margin: 3%;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoproduit{
+        margin: 3%;
+    }
+
+    .data{
+        flex-direction: column-reverse;
+        margin-bottom: 3%;
+    }
+    .name{
+        margin-bottom: 2%;
+    }
+    .description{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .achatbuton{
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        margin: 3%;
+        margin-left: 0%;
+        height: fit-content;
+        justify-content:space-between;
+    
+    }
+    .ba{
+        height: fit-content;
+    }
+
+    .number{
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        margin: 3%;
+        margin-left: 0%;
+        height: fit-content;
+        justify-content:space-between;
+    }
+
+    #select{
+        margin: 0%;
+    }
 }
