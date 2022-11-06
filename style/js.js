@@ -8,6 +8,7 @@ function plus() {
     compteur = compteur + 1;
     document.getElementById("counting").innerText = compteur;
     document.getElementById("numberp").innerText = numberp * compteur;
+    
 }
 function moins() {
     if(compteur <= 1){
@@ -22,12 +23,20 @@ function moins() {
 }
 
 
+var elem = document.getElementById( 'buypop' );
 
 
-function buy() {
-    $('.buypop').addClass('visible');
-    $('.buypop2').addClass('visible');
+function buy(){
+    elem.classList.add('visible');
+};
+
+
+function removebuy(){
+    elem.classList.remove('visible');
 }
+
+
+
 
 var x = document.getElementById("0");
 var y = 1;
@@ -87,5 +96,4 @@ function img3(){
     y= 3;
     img();
 }
-
 
