@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="style/pageitem.css">
 </head>
 <body>
-
-
-
-
-
-
-    
     <div class="corps">
         <div></div>
         <div class="page">
@@ -21,13 +14,13 @@
             <div class="imgarticle">
                 <div class="grosseimage">
                     <div class="imgapparente1">
-                        <img src="image/cube1.jpg" alt="why" class="imgapparente" id="0">
+                        <img src="image/test1.png" alt="why" class="imgapparente" id="0">
                     </div>
                 </div>
                 <div class="listeimg">
-                    <button onclick="img1()" class="bc"><img src="image/cube1.jpg" alt="" class="img1" id="1"></button>
-                    <button onclick="img2()" class="bc"><img src="image/cube2.jpg" alt="" class="img2" id="2"></button>
-                    <button onclick="img3()" class="bc"><img src="image/cube3.jpg" alt="" class="img3" id="3"></button>
+                    <button onclick="img1()" class="bc"><img src="image/test1.png" alt="" class="img1" id="1"></button>
+                    <button onclick="img2()" class="bc"><img src="image/test2.png" alt="" class="img2" id="2"></button>
+                    <button onclick="img3()" class="bc"><img src="image/test3.png" alt="" class="img3" id="3"></button>
                     <button onclick="next()" class="bnext2"><img src="image/Vector.png" alt=""></button>
                 </div>
 
@@ -57,7 +50,7 @@
                             </button>
                         </div>
                     </div>
-                    <select id="select" aria-label="Default select example" onclick="select()">
+                    <select id="select" aria-label="Default select example" onclick="selectedd()">
                         <option selected>selectionnez une taille</option>
                         <option value="1">XS</option>
                         <option value="2">S</option>
@@ -68,11 +61,9 @@
                 </div>
 
                 <div class="achatbuton">
-                    <button onclick="buy()" class="buy achat ba">acheter maintenant</button>
+                    <button onclick="buy()" class="buy achat ba">ajouter au panier</button>
         
-                    <div class="card ba">
-                        <button onclick="card()" class="card ba">ajouter une carte</button>
-                    </div>
+                    <button onclick="card()" class="card ba">acheter maintenant</button>
                 </div>
 
 
@@ -82,10 +73,39 @@
 
 
 
-        <div class="buypop" id="buypop">
-            <div class="toppopb" ><div class="rmbuy" onclick="removebuy()"></div></div>
-                
-                    wow
+            <div class="buypop" id="buypop">
+                <div class="contentachat">
+                    <div class="toppopb" >
+                        <div class="none"></div>
+                        <span class="txtpanier"><strong>L'atricle a bien été ajouter au panier</strong> </span>
+                        <div class="rmbuy none" onclick="removebuy()"></div>
+                    </div>
+                    <div class="recap">
+                        <div class="imgbox">
+                            <img class="imgrecap" src="image/test1.png" alt="">
+                        </div>
+                        <div class="recaptxt">
+                            <div class="speccommande">
+                                <h3 >type de produit : dromadaire</h3>
+                            </div>
+                            <div class="tests">
+                                
+                                <div class="coutrecap">
+                                    <div class="printp">vous avez choisi la taille :<span class="recaptaille" id="recaptaille"></span></div> 
+                                    <div class="printp"> prix unitaire : <span class="punit" id="punit"></span></div> 
+                                    <div class="printp"> prix total : <span class="prixtot" id="prixtot"></span></div>
+                                </div>
+                            </div>
+                         
+                                <div class="boutonsecondaire">
+                                    <a class="backbuy btnsmin" href="page2.html">continuer les achat</a>
+                                    <a class="btnsmin" href="#">payer la commande</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
