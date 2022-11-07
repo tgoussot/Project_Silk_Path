@@ -13,12 +13,14 @@
 /* css partie gacuhe (image) */
 
 .imgarticle{
+    position: relative;
     display: grid;
-    height: 50%;
-    width: 80%;
+    height: fit-content;
+    width: 55%;
     grid-template-rows: 80% 20%;
     margin-top: 20%;
-    margin-left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     border-style: solid;
     border-width: 2px;
 
@@ -58,15 +60,15 @@
 
 .grosseimage{
     grid-row: 1;
-    display: flex;
+    padding: 7px;
+    height: fit-content;
+    position: relative;
     justify-content: center;
 }
 
 
 .imgapparente{
     width: 100%;
-    height: 100%;
-    z-index: 40;
 }
 .bnext{
     z-index: 60;
@@ -101,7 +103,6 @@ button{
 .infoproduit{
     margin-top: 20%;
     margin-right: 10%;
-    margin-left: 15%;
 }
 
 .number{
@@ -290,7 +291,8 @@ button{
     }
 
     .imgarticle{
-        left: 50%;  
+        left: 50%;
+        width: 80%;
     }
 
     .data{
