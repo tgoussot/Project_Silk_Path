@@ -1,0 +1,20 @@
+body{
+    margin:0;
+}
+
+
+.navBar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:aquamarine;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
