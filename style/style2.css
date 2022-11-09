@@ -14,12 +14,6 @@ body {
     text-align: left;
 }
 
-
-
-.input :hover {
-    transform: scale(1.2);
-}
-
 .categorie {
     margin-top: 2px;
     padding: 0;
@@ -29,6 +23,7 @@ body {
 .form-check {
     display: grid;
     grid-template-columns: 2vw 1fr;
+    align-items: center;
 }
 
 .filtre h4 {
@@ -48,6 +43,11 @@ body {
     font-size: 13px;
     line-height: 17px;
 }
+
+
+
+
+
 
 /* ------------------------------------ */
 
