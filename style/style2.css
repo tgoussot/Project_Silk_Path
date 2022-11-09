@@ -1,17 +1,41 @@
 body {
-    background-color: #e5e5e5;
+    background-color: white;
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container{
     display: grid;
     grid-template-columns: 25% 1fr;
 }
+/* ----------------------------------- */
+.entete{
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 216px;
+}
+.entete h1{
+    margin: 0;
+    font-size: 36px;
+}
+.entete_text {
+    color: white;
+    padding-top: 34px;
+    padding-left: 145px;
+    font-family: sans-serif;
+    width: 476px;
+}
+.entete p{
+    font-size: 18px;
+}
 
 /* ----------------------------------- */
 
 .filtre{
     text-align: left;
+    margin-left: 1vw;
 }
 
 .categorie {
@@ -43,11 +67,43 @@ body {
     font-size: 13px;
     line-height: 17px;
 }
+/* ---------------------------------- */
 
+.fcolor {
+    background-color: green;
+    border-radius: 100%;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: solid 2px black;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    display: flex;
+    justify-content: center;
+}
 
+.catColor{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% ;
+}
 
+/* ---------------------------------- */
 
+.deroulant_sortBy {
+    padding: 0;
+    margin-right: 6vw;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.nbr_item {
+    padding: 0;
+    margin-right: 6vw;
+    margin-bottom: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    margin-top: -0.5vw;
+}
 
 /* ------------------------------------ */
 
@@ -104,4 +160,16 @@ body {
 
 .block_text .prix {
     margin-left: 00.5vw;
+}
+
+/* ----------------------------- */
+
+.a_bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
+
+.b01 {
+    border: solid black 2px;
 }
