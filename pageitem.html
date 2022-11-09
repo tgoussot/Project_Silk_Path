@@ -63,7 +63,7 @@
                 <div class="achatbuton">
                     <button onclick="buy()" class="buy achat ba">ajouter au panier</button>
         
-                    <button onclick="card()" class="card ba">acheter maintenant</button>
+                    <button onclick="achat()" class="card ba"> acheter maintenant</button>
                 </div>
 
 
@@ -89,26 +89,54 @@
                                 <h3 >type de produit : dromadaire</h3>
                             </div>
                             <div class="tests">
-                                
                                 <div class="coutrecap">
                                     <div class="printp">vous avez choisi la taille :<span class="recaptaille" id="recaptaille"></span></div> 
                                     <div class="printp"> prix unitaire : <span class="punit" id="punit"></span></div> 
                                     <div class="printp"> prix total : <span class="prixtot" id="prixtot"></span></div>
                                 </div>
                             </div>
-                         
                                 <div class="boutonsecondaire">
-                                    <a class="backbuy btnsmin" href="page2.html">continuer les achats</a>
-                                    <a class="btnsmin" href="#">payer la commande</a>
+                                    <a class="backbuy btnsmin btnbuy" href="page2.html">continuer les achats</a>
+                                    <a class="btnsmin btnbuy" href="https://paypal.me/dropcalixteair?country.x=FR&locale.x=fr_FR">payer la commande</a>
                                 </div>
+
                             
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <div class="achatpop" id="achatpop">
+                <div class="contentachat contentadd">
+                    <div class="toppopb" >
+                        <div class="none"></div>
+                        <span class="txtpanier"><strong>Acheter l'article</strong> </span>
+                        <div class="rmachat none" onclick="removeachat()"></div>
+                    </div>   
+                    <div class="recaptxt rt1">
+                        <div class="rt2">
+                            <div class="speccommande">
+                                <h3 >type de produit : dromadaire</h3>
+                            </div>
+                            <div class="tests">      
+                                <div class="coutrecap">
+                                    <div class="printp">vous avez choisi la taille :<span class="recaptaille" id="recaptaille2"></span></div> 
+                                    <div class="printp"> prix unitaire : <span class="punit2" id="punit2"></span></div> 
+                                    <div class="printp"> prix total : <span class="prixtot" id="prixtot2"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="garde">Attention si vous continuer nous ne somme pas responsable de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurai rien <br> Mais vous pouvez quand meme payer le montant que vous souhaité</div>
+                    <span class="rt1">
+                        <a class="btnsmin btnachat" href="https://paypal.me/dropcalixteair?country.x=FR&locale.x=fr_FR">payer la commande</a>
+                    </span>
+                </div>
+                
+            </div>
         </div>
     </div>
-    <script src="style/js.js"></script>
+    <script src="style/pageitem.js"></script>
 </body>
 </html>
