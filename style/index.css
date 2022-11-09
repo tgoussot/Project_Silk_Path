@@ -1,0 +1,55 @@
+body{
+    margin:0;
+}
+
+
+.navBar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom:solid 1px black;
+    padding-top: 2vh;
+    padding-bottom : 2vh;
+
+}
+
+h2.titreNavBar{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin:0;
+    margin-left: 3vh;
+
+}
+
+h4.elementNavBar{
+    display:flex;
+    align-items: center;
+    margin:0;
+    margin-left:6vh;
+}
+
+h4.elementDroiteNav{
+    margin-left: auto;
+    margin-right: 20vh;
+    
+}
+
+
+
+
+input.chercheNavBar{
+    display:flex;
+    align-items: center;
+    margin: 0;
+    margin-left:6vh;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
