@@ -29,6 +29,11 @@ h2{
   width:100%;
 }
 
+.caractere{
+  size: 25px;
+  float: right;
+}
+
 .remove1{
   text-decoration: underline;
   color: #000;
