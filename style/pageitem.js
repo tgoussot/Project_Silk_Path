@@ -1,8 +1,9 @@
 
 
 var compteur = 1;
-var numberp = 10;
+var numberp = 65;
 var taille = 0;
+var path = "blanc/";
 document.getElementById("punit").innerText = numberp + " €";
 document.getElementById("prixtot").innerText = numberp * compteur + " €";
 document.getElementById("counting").innerText = compteur;
@@ -75,23 +76,29 @@ function removeachat(){
 }
 
 var x = document.getElementById("0").style.backgroundImage;
-var z = document.getElementsByClassName("imgrecap");
+var z = document.getElementById("imgrecap");
 var y = 1;
 
 
 function img(){
     switch (y) {
-        case 1 : document.getElementById("0").style.backgroundImage= "url(image/test1.png)";
-            z.setAttribute("src", "image/test1.png");
+        case 1 : document.getElementById("0").style.backgroundImage= "url(image/"+path+"Backpack-back.png)";
+            z.src = "image/"+path+"Backpack-back.png";
             break;
-        case 2 : x = document.getElementById("0").style.backgroundImage= "url(image/test2.png)";
-            z.setAttribute("src", "image/test2.png");
+        case 2 : x = document.getElementById("0").style.backgroundImage= "url(image/"+path+"Backpack-front.png)";
+            z.src = "image/"+path+"Backpack-front.png";
             break;
-        case 3 : document.getElementById("0").style.backgroundImage= "url(image/test3.png)";
-                z.setAttribute("src", "image/test3.png");
+        case 3 : document.getElementById("0").style.backgroundImage= "url(image/"+path+"Backpack-porter.png)";
+                z.src = "image/"+path+"Backpack-porter.png";
             break;
     }
+    document.getElementById("1").src = "image/"+path+"Backpack-back.png";
+    document.getElementById("2").src = "image/"+path+"Backpack-front.png";
+    document.getElementById("3").src = "image/"+path+"Backpack-porter.png";
+
+
 }
+
 function selectedd(){
     taille = Number(document.getElementById('select').value);
     var select = document.getElementById('select'),
@@ -100,20 +107,29 @@ function selectedd(){
     document.getElementById("recaptaille").innerText = selectValue;
     document.getElementById("recaptaille2").innerText = selectValue;
     switch (taille) {
-        case 1 : numberp = 10; 
+        case 0 : numberp = 65;
+                path = "blanc/";
+                break;
+        case 1 : numberp = 65;
+                path = "blanc/";
             break;
-        case 2 : numberp = 20; 
+        case 2 : numberp = 60; 
+                path = "noir/";
             break;
-        case 3 : numberp = 30;
+        case 3 : numberp = 55;
+        path = "rouge/";
             break;
-        case 4 : numberp = 40;
-            break;
-        case 5 : numberp = 50;
+        case 4 : numberp = 55;
+        path = "vert/";
             break;
     }
     document.getElementById("numberp").innerText = numberp * compteur;
     plus();
     moins();
+    if (taille!= 0){
+        img2();
+    }
+    
 }
 
 

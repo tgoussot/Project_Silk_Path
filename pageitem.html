@@ -51,9 +51,9 @@
                     <button  class="bnext2"><img class="bnext" onclick="next()" src="image/Vector.png" alt=""></button>
                 </div>
                 <div class="listeimg">
-                    <button onclick="img1()" class="bc"><img src="image/test1.png" alt="" class="img1" id="1"></button>
-                    <button onclick="img2()" class="bc"><img src="image/test2.png" alt="" class="img2" id="2"></button>
-                    <button onclick="img3()" class="bc"><img src="image/test3.png" alt="" class="img3" id="3"></button>  
+                    <button onclick="img1()" class="bc"><img src="image/blanc/Backpack-back.png" alt="" class="img1" id="1"></button>
+                    <button onclick="img2()" class="bc"><img src="image/blanc/Backpack-front.png" alt="" class="img2" id="2"></button>
+                    <button onclick="img3()" class="bc"><img src="image/blanc/Backpack-porter.png" alt="" class="img3" id="3"></button>  
                 </div>
             </div>
 
@@ -66,10 +66,10 @@
                 <!-- prix et description -->
                 <div class="data">
                     <div class="prix">
-                        <strong> <span id="numberp">10</span> €</strong>
+                        <strong> <span id="numberp">65</span> €</strong>
                     </div>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis, iure quasi, odit sint hic facere tempore dolor eligendi a nisi culpa enim vitae quo.
+                        Le Sac à dos SilkPath est un sac de 20l. Il est parfait pour être utilisé comme sac quotidien. Sa composition en matériaux résistante et le savoir-faire de SilkPath assurent une longe durer de vie a votre Sac. Disponible en plusieurs donc tout le monde peut trouver son style.
                     </div>
                 </div>
 
@@ -90,13 +90,12 @@
                         </div>
                     </div>
 
-                    <select id="select" aria-label="Default select example" onclick="selectedd()">
-                        <option selected>selectionnez une taille</option>
-                        <option value="1">black</option>
-                        <option value="2">S</option>
-                        <option value="3">M</option>
-                        <option value="4">L</option>
-                        <option value="5">XL</option>
+                    <select id="select" aria-label="Default select example" onchange="selectedd()">
+                        <option selected value="0">selectionnez une couleur</option>
+                        <option value="1">blanc</option>
+                        <option value="2">noir</option>
+                        <option value="3">rouge</option>
+                        <option value="4">vert</option>
                     </select>
                 </div>
 
@@ -116,19 +115,19 @@
                     <div class="toppopb" >
                         <div class="none"></div>
                             <span class="txtpanier"><strong>L'article a bien été ajouté au panier</strong> </span>
-                        <div class="rmbuy none" onclick="removebuy()"></div>
+                        <div class="rmbuy none" onclick="removebuy()"> <img class="croix" src="image/croix.png" alt=""></div>
                     </div>
                     <div class="recap">
                         <div class="imgbox">
-                            <img class="imgrecap" src="image/test1.png" alt="">
+                            <img class="imgrecap" id="imgrecap" src="image/blanc/Backpack-front.png" alt="">
                         </div>
                         <div class="recaptxt">
                             <div class="speccommande">
-                                <h3 >type de produit : dromadaire</h3>
+                                <h3 >type de produit : Sac a dos SilkPath</h3>
                             </div>
                             <div class="tests">
                                 <div class="coutrecap">
-                                    <div class="printp">vous avez choisi la taille :<span class="recaptaille" id="recaptaille"></span></div> 
+                                    <div class="printp">vous avez choisi la couleur :<span class="recaptaille" id="recaptaille"></span></div> 
                                     <div class="printp"> prix unitaire : <span class="punit" id="punit"></span></div> 
                                     <div class="printp"> prix total : <span class="prixtot" id="prixtot"></span></div>
                                 </div>
@@ -150,16 +149,16 @@
                     <div class="toppopb" >
                         <div class="none"></div>
                             <span class="txtpanier"><strong>Acheter l'article</strong> </span>
-                        <div class="rmachat none" onclick="removeachat()"></div>
+                        <div class="rmachat none" onclick="removeachat()"> <img class="croix" src="image/croix.png" alt=""></div>
                     </div>   
                     <div class="recaptxt rt1">
                         <div class="rt2">
                             <div class="speccommande">
-                                <h3 >type de produit : dromadaire</h3>
+                                <h3 >type de produit : Sac a dos SilkPath</h3>
                             </div>
                             <div class="tests">      
                                 <div class="coutrecap">
-                                    <div class="printp">vous avez choisi la taille :<span class="recaptaille" id="recaptaille2"></span></div> 
+                                    <div class="printp">vous avez choisi la couleur :<span class="recaptaille" id="recaptaille2"></span></div> 
                                     <div class="printp"> prix unitaire : <span class="punit2" id="punit2"></span></div> 
                                     <div class="printp"> prix total : <span class="prixtot" id="prixtot2"></span></div>
                                 </div>
@@ -167,8 +166,7 @@
                         </div>
                     </div>
                     <div class="garde">
-                        Attention si vous continuer nous ne somme pas responsable de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurai rien <br> Mais vous pouvez quand meme payer le montant que vous souhaité
-                    </div>
+                        Attention, nous ne sommes pas responsables de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurez rien. <br> Mais vous pouvez quand même payer le montant que vous souhaité.                    </div>
                     <span class="rt1">
                         <a class="btnsmin btnachat" href="https://paypal.me/dropcalixteair?country.x=FR&locale.x=fr_FR">payer la commande</a>
                     </span>
