@@ -19,8 +19,8 @@
 .imgarticle{
     position: relative;
     display: grid;
-    height: 96vh;
-    width: 82vh;
+    height: 45vw;
+    width: 40vw;
     grid-template-rows: 85% 15%;
     margin-top: 20%;
     left: 50%;
@@ -333,9 +333,6 @@ button{
     .btnsmin{
         width: 50%;
     }
-    .page{
-        grid-template-columns: 60% 40%;
-    }
 }
 
 @media screen and (max-width: 1024px){
@@ -377,11 +374,6 @@ button{
 
 }
 
-@media screen and (max-width: 720px){
-    .page{
-        grid-template-columns: 70% 30%;
-    }
-}
 
 @media screen and (max-width: 720px){
     .page{
@@ -391,8 +383,8 @@ button{
 
     .imgarticle{
         left: 50%;
-        width: 78vh;
-        height: 91vh;
+        width: 80vw;
+        height: 115vh;
     }
 
     .infoproduit{
