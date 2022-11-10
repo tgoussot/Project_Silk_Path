@@ -1,13 +1,16 @@
 
 
 .corps{
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    font-family : 'Public Sans';
+    font-style : normal;
 }
 
 .page{
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-bottom: 5%;
 
 }
 
@@ -365,7 +368,7 @@ button{
     }
 
     .achat{
-        margin-bottom: 3%;
+        margin-bottom: 12%;
     }
     .rt2{
         width: 70%;
@@ -374,7 +377,7 @@ button{
 
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 10cm){
     .page{
         display: flex;
         flex-direction: column;
@@ -383,7 +386,7 @@ button{
     .imgarticle{
         left: 50%;
         width: 78vh;
-        height: 96vh;
+        height: 91vh;
     }
 
     .infoproduit{
