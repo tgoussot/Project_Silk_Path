@@ -6,7 +6,7 @@ body {
 
 .container{
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 30% 60% 1fr;
 }
 /* ----------------------------------- */
 .entete{
@@ -67,7 +67,27 @@ body {
     font-size: 13px;
     line-height: 17px;
 }
+
+.input input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border: solid black 1px;
+    height: 1vw;
+    width: 1vw;
+}
+
+.input input[type="checkbox"]:checked {
+    content: url(../image/check.png);
+  }
+
+
 /* ---------------------------------- */
+.f0 {
+    display: flex;
+    justify-content: center;
+}
+
 
 .fcolor {
     background-color: green;
@@ -83,7 +103,7 @@ body {
 
 .catColor{
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% ;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
 }
 
 .check {
@@ -108,14 +128,14 @@ body {
 
 .deroulant_sortBy {
     padding: 0;
-    margin-right: 6vw;
+    margin-right: 2vw;
     display: flex;
     justify-content: flex-end;
 }
 
 .nbr_item {
     padding: 0;
-    margin-right: 6vw;
+    margin-right: 2vw;
     margin-bottom: 3vw;
     display: flex;
     justify-content: flex-end;
@@ -132,21 +152,21 @@ body {
 }
 
 .block {
-    width: 20vw;
+    width: 15vw;
     padding: 0;
     margin-right: 3vw;
     margin-bottom: 3vw;
 }
 
 .block_img {
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
 }
 
 
 .block_img .imgp2{
-    height: 20vw;
-    width: 20vw;
+    height: 18vw;
+    width: 18vw;
     object-fit: cover;
 }
 
@@ -154,6 +174,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 18vw;
 }
 
 .block_text .parametre {
@@ -177,7 +198,7 @@ body {
 
 
 .block_text .prix {
-    margin-left: 00.5vw;
+    margin-left: 0.5vw;
 }
 
 /* ----------------------------- */
