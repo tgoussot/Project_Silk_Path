@@ -14,6 +14,10 @@ h2{
   font-size: 22px;
 }
 
+.order{
+
+}
+
 .Image1{
   width:129px;
   height:133px;
@@ -34,6 +38,11 @@ h2{
   float: right;
 }
 
+.summary{
+  display : flex;
+  flex-direction : column;
+}
+
 .remove1{
   text-decoration: underline;
   color: #000;
@@ -49,8 +58,10 @@ h2{
   flex-direction : row;
 }
 
-.summary{
-  
+.menufin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .caractere{
