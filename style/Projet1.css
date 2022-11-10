@@ -36,13 +36,15 @@ h2{
   text-align: right;
 }
 
-/*
+
+
 .element1{
-display: flex
-flex:11
+display: block;
+flex:1;
 }
 
 .element2 {
-display: flex
-flex: 1
-}*/
+display: block;
+flex: 1;
+
+}
