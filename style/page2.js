@@ -1,3 +1,7 @@
+// Projet Silk-Path
+// Page 2 (card item)
+// by Peyrous Yonnis 
+
 var check01  =  document.getElementById("c01");
 function check1() {
     check01.classList.toggle('visible');
