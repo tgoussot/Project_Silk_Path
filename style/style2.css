@@ -15,6 +15,7 @@ body {
     padding: 0;
     margin: 0;
     height: 216px;
+    display: flex;
 }
 .entete h1{
     margin: 0;
@@ -42,6 +43,18 @@ body {
     margin-top: 2px;
     padding: 0;
     margin-bottom: 3px;
+}
+
+.topFiltre {
+    display: flex;
+    align-items: baseline;
+}
+
+.reset {
+    font-size: 14px;
+    color: lightgray;
+    text-decoration: underline;
+    padding-left: 1vw;
 }
 
 .form-check {
@@ -253,4 +266,31 @@ body {
     background-color: black;
     color: white;
     transition: 0.2s;
+}
+
+
+/* ---------------------------------- */
+
+@media screen and (max-width: 730px){   
+    .entete{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    } 
+    .entete_text{
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .entete_text h1{
+        color: black;
+        text-align: center;
+    }
+    .entete_text p{
+        color: gray;
+    }
 }
