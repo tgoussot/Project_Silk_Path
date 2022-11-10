@@ -3,6 +3,8 @@
 .colonne{
   display : flex;
   flex-direction : column;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 body{
@@ -14,13 +16,15 @@ h2{
   font-size: 22px;
 }
 
-.order{
-
-}
-
 .Image1{
   width:129px;
   height:133px;
+}
+
+.bouton{
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
 }
 
 .Article{
@@ -41,6 +45,7 @@ h2{
 .summary{
   display : flex;
   flex-direction : column;
+  margin-left:auto;
 }
 
 .remove1{
