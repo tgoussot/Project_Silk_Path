@@ -327,6 +327,10 @@ body {
     .topFiltre h2{
         margin-bottom: 0;
     }
+    .filtre h4{
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+    }
     .input input[type=checkbox] {
         height: 14px;
         width: 14px;
@@ -406,5 +410,6 @@ body {
     .b01 {
         height: 10vw;
         width: 60vw;
+        margin-top: 15vw;
     }
 }
