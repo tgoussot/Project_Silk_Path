@@ -1,0 +1,48 @@
+/*TEXTE*/
+
+.colonne{
+  display : grid;
+  grid-template-columns: 50% 50%;
+  margin: 5vw;
+}
+
+body{
+  font-family : 'Public Sans';
+  font-style : normal;
+}
+
+h2{
+  font-size: 22px;
+}
+
+.Image1{
+  width:129px;
+  height:133px;
+}
+
+.Article{
+  display : flex;
+  align-items: center;
+  flex: auto;
+}
+
+.description{
+  width:100%;
+}
+
+.remove1{
+  text-decoration: underline;
+  color: #000;
+  text-align: right;
+}
+
+/*
+.element1{
+display: flex
+flex:11
+}
+
+.element2 {
+display: flex
+flex: 1
+}*/
