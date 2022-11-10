@@ -3,12 +3,12 @@
 var compteur = 1;
 var numberp = 10;
 var taille = 0;
-document.getElementById("punit").innerText = numberp + "€";
-document.getElementById("prixtot").innerText = numberp * compteur + "€";
+document.getElementById("punit").innerText = numberp + " €";
+document.getElementById("prixtot").innerText = numberp * compteur + " €";
 document.getElementById("counting").innerText = compteur;
 
-document.getElementById("punit2").innerText = numberp + "€";
-document.getElementById("prixtot2").innerText = numberp * compteur + "€";
+document.getElementById("punit2").innerText = numberp + " €";
+document.getElementById("prixtot2").innerText = numberp * compteur + " €";
 
 var select = document.getElementById('select'),
     selectValue = select.options[0].text;
@@ -23,32 +23,32 @@ function plus() {
     compteur = compteur + 1;
     document.getElementById("counting").innerText = compteur;
     document.getElementById("numberp").innerText = numberp * compteur;
-    document.getElementById("punit").innerText = numberp + "€";
-    document.getElementById("prixtot").innerText = numberp * compteur + "€";
+    document.getElementById("punit").innerText = numberp + " €";
+    document.getElementById("prixtot").innerText = numberp * compteur + " €";
 
-    document.getElementById("punit2").innerText = numberp + "€";
-    document.getElementById("prixtot2").innerText = numberp * compteur + "€";
+    document.getElementById("punit2").innerText = numberp + " €";
+    document.getElementById("prixtot2").innerText = numberp * compteur + " €";
     
 }
 function moins() {
     if(compteur <= 1){
         compteur = 1;
         document.getElementById("numberp").innerText = numberp * compteur;
-        document.getElementById("punit").innerText = numberp + "€";
-        document.getElementById("prixtot").innerText = numberp * compteur + "€";
+        document.getElementById("punit").innerText = numberp + " €";
+        document.getElementById("prixtot").innerText = numberp * compteur + " €";
 
-        document.getElementById("punit2").innerText = numberp + "€";
-        document.getElementById("prixtot2").innerText = numberp * compteur + "€";
+        document.getElementById("punit2").innerText = numberp + " €";
+        document.getElementById("prixtot2").innerText = numberp * compteur + " €";
     }
     else{
         compteur = compteur - 1;
         document.getElementById("counting").innerText = compteur;
         document.getElementById("numberp").innerText = numberp * compteur;
-        document.getElementById("punit").innerText = numberp + "€";
-        document.getElementById("prixtot").innerText = numberp * compteur + "€";
+        document.getElementById("punit").innerText = numberp + " €";
+        document.getElementById("prixtot").innerText = numberp * compteur + " €";
 
-        document.getElementById("punit2").innerText = numberp + "€";
-        document.getElementById("prixtot2").innerText = numberp * compteur + "€";
+        document.getElementById("punit2").innerText = numberp + " €";
+        document.getElementById("prixtot2").innerText = numberp * compteur + " €";
     }
 }
 
@@ -74,24 +74,20 @@ function removeachat(){
     elem2.classList.remove('visible');
 }
 
-
-
-
-var x = document.getElementById("0");
+var x = document.getElementById("0").style.backgroundImage;
 var z = document.getElementsByClassName("imgrecap");
 var y = 1;
 
 
-
 function img(){
     switch (y) {
-        case 1 : x.setAttribute("src", "image/test1.png");
+        case 1 : document.getElementById("0").style.backgroundImage= "url(image/test1.png)";
             z.setAttribute("src", "image/test1.png");
             break;
-        case 2 : x.setAttribute("src", "image/test2.png");
+        case 2 : x = document.getElementById("0").style.backgroundImage= "url(image/test2.png)";
             z.setAttribute("src", "image/test2.png");
             break;
-        case 3 : x.setAttribute("src", "image/test3.png");
+        case 3 : document.getElementById("0").style.backgroundImage= "url(image/test3.png)";
                 z.setAttribute("src", "image/test3.png");
             break;
     }

@@ -8,35 +8,42 @@
 </head>
 <body>
     <div class="corps">
-        <div></div>
+        <div></div> <!-- navbar -->
         <div class="page">
 
+            <!-- partie image de la page  -->
+
             <div class="imgarticle">
-                <div class="grosseimage">
-                    <div class="imgapparente1">
-                        <img src="image/test1.png" alt="why" class="imgapparente" id="0">
-                    </div>
+                <div class="grosseimage" id="0">
+                    <button  class="bnext2"><img class="bnext" onclick="next()" src="image/Vector.png" alt=""></button>
                 </div>
                 <div class="listeimg">
                     <button onclick="img1()" class="bc"><img src="image/test1.png" alt="" class="img1" id="1"></button>
                     <button onclick="img2()" class="bc"><img src="image/test2.png" alt="" class="img2" id="2"></button>
-                    <button onclick="img3()" class="bc"><img src="image/test3.png" alt="" class="img3" id="3"></button>
-                    <button onclick="next()" class="bnext2"><img src="image/Vector.png" alt=""></button>
+                    <button onclick="img3()" class="bc"><img src="image/test3.png" alt="" class="img3" id="3"></button>  
                 </div>
-
             </div>
-            <div class="infoproduit">
-                <h3 class="name">dromadaire</h3>
 
+
+            <!-- partie information du produit  -->
+
+            <div class="infoproduit">
+                <h3 class="name">Sac à dos SilkPath</h3>
+
+
+                <!-- prix et description -->
                 <div class="data">
                     <div class="prix">
-                        <strong> <span id="numberp">10</span>$</strong>
+                        <strong> <span id="numberp">10</span> €</strong>
                     </div>
                     <div class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis, iure quasi, odit sint hic facere tempore dolor eligendi a nisi culpa enim vitae quo.
                     </div>
                 </div>
+
+                <!-- quantité et taille -->
                 <div class="number">
+
                     <div class="compteur">
                         <div class="moins">
                             <button onclick="moins()">
@@ -50,6 +57,7 @@
                             </button>
                         </div>
                     </div>
+
                     <select id="select" aria-label="Default select example" onclick="selectedd()">
                         <option selected>selectionnez une taille</option>
                         <option value="1">XS</option>
@@ -64,20 +72,18 @@
                     <button onclick="buy()" class="buy achat ba">ajouter au panier</button>
         
                     <button onclick="achat()" class="card ba"> acheter maintenant</button>
-                </div>
-
-
-                
+                </div>      
             </div>
 
 
 
-
+            <!-- bouton popup -->
+            <!-- popup du panier -->
             <div class="buypop" id="buypop">
                 <div class="contentachat">
                     <div class="toppopb" >
                         <div class="none"></div>
-                        <span class="txtpanier"><strong>L'article a bien été ajouté au panier</strong> </span>
+                            <span class="txtpanier"><strong>L'article a bien été ajouté au panier</strong> </span>
                         <div class="rmbuy none" onclick="removebuy()"></div>
                     </div>
                     <div class="recap">
@@ -107,11 +113,12 @@
                 </div>
             </div>
 
+            <!-- popup pour payer directement -->
             <div class="achatpop" id="achatpop">
                 <div class="contentachat contentadd">
                     <div class="toppopb" >
                         <div class="none"></div>
-                        <span class="txtpanier"><strong>Acheter l'article</strong> </span>
+                            <span class="txtpanier"><strong>Acheter l'article</strong> </span>
                         <div class="rmachat none" onclick="removeachat()"></div>
                     </div>   
                     <div class="recaptxt rt1">
@@ -128,13 +135,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="garde">Attention si vous continuer nous ne somme pas responsable de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurai rien <br> Mais vous pouvez quand meme payer le montant que vous souhaité</div>
+                    <div class="garde">
+                        Attention si vous continuer nous ne somme pas responsable de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurai rien <br> Mais vous pouvez quand meme payer le montant que vous souhaité
+                    </div>
                     <span class="rt1">
                         <a class="btnsmin btnachat" href="https://paypal.me/dropcalixteair?country.x=FR&locale.x=fr_FR">payer la commande</a>
                     </span>
                 </div>
-                
             </div>
+            <!-- fin popup payer directement -->
         </div>
     </div>
     <script src="style/pageitem.js"></script>
