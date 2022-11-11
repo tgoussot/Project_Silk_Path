@@ -357,6 +357,8 @@ span.desactivated{
         align-items: center;
     }
     
-
+    .container-el .sponso img{
+        width: 15vh;
+    }
 
 }
