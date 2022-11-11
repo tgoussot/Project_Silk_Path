@@ -185,7 +185,7 @@ span.desactivated{
     margin          : 0                      ;
     font-size       : 56px                   ;
     font-weight     : bold                   ;
-    font-family     : Public Sans, sans-serif;
+    font-family: 'Inter', sans-serif ;
     margin-top      : 13vh                   ;
 }
 
@@ -195,7 +195,7 @@ span.desactivated{
     font-weight : 400                     ;
     font-size   : 20px                    ;
     color       :#979797                ;
-    font-family : Public Sans, sans-serif ;
+    font-family: 'Inter', sans-serif ;
 
 }
 
@@ -222,7 +222,7 @@ span.desactivated{
     background      : none              ;
     font-weight     : bold              ;
     font-size       : 17px              ;
-    font-family     : sans-serif        ;
+    font-family: 'Inter', sans-serif ;
 }
 
 .container-el input:hover{
@@ -252,9 +252,7 @@ span.desactivated{
     align-items : center    ;
 }
 
-.footer{
-    line-height: normal;
-}
+
 
 /* MEDIA QUERY */
 @media screen and (max-width : 940px) {

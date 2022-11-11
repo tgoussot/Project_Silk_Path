@@ -141,6 +141,10 @@ span.desactivated{
     margin-left : 30px     ;
 }
 
+div.elementGauche .loupe svg{
+    color:white;
+}
+
 .menuNavigation .container{
     display :   flex    ;
     width   :  100%;    ;
@@ -202,6 +206,7 @@ span.desactivated{
 
     div.elementDroite a.dernierEl{
         margin-bottom:1vh;
+        margin-top:20px;
     }
 
 

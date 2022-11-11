@@ -1,7 +1,7 @@
 .corps{
     display: flex;
     flex-direction: column;
-    font-family : 'Public Sans';
+    font-family : 'Inter', sans-serif;
     font-style : normal;
 }
 
