@@ -1,5 +1,3 @@
-/* Développé par Théo GOUSSOT S1 A2    */
-/* CSS utilisé pour la page index.html */
 
 body{
     margin  : 0      ;
@@ -7,19 +5,11 @@ body{
     color   :black ;
 }
 
-/*************** SOMMAIRE ********************/
-/* I  . NAVBAR                               */
-/* II . BAS DE PAGE (texte + boutton + image)*/
-/* III. MEDIA QUERY                          */
-/*********************************************/
-
-
-/* Accueil : NAVBAR */
-
 nav{
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 .menuNavigation{
@@ -30,7 +20,7 @@ nav{
     padding-top         : 25px               ;
     padding-bottom      : 25px               ;    
     width               : 100%               ;
-    background-color    : whitesmoke       ;
+    background-color    : black       ;
     border-bottom       : 1px solid grey   ;
     box-sizing          : border-box         ;
     -webkit-user-select : none               ;
@@ -50,7 +40,7 @@ nav{
     font-weight     : 700   ;
     font-size       : 20px  ;
     padding-right:20px;
-    color           :black;
+    color           : white;
     flex-wrap: nowrap;
 
     
@@ -74,7 +64,7 @@ div.elementGauche{
     text-decoration : none          ;
     align-items     : center        ;
     justify-content : space-between ;
-    color           :black        ;
+    color           :white        ;
     display         : inline-block  ;
     position        : relative      ;
 
@@ -111,7 +101,7 @@ div.elementDroite a{
     margin-left     : 80px         ;
     font-size       : 17px         ;
     font-weight     : 400          ;
-    color           : black      ;
+    color           : white      ;
     display         : inline-block ;
     position        : relative     ;
 }
@@ -160,83 +150,6 @@ span.desactivated{
     display :   none    ;
 }
 
-/* Accueil : CONTENEUR QUI CONTIENT TOUT LE BAS DE LA PAGE */
-.container-el{
-    display             : flex               ;
-    flex-direction      : column             ;
-    width               :        100%        ;
-    -webkit-user-select : none               ;
-    -moz-user-select    : none               ;
-    -ms-user-select     : none               ;
-    user-select         : none               ;
-}
-
-/* Accueil : TEXTE PRESENTATION + TITRE */
-.container-el p{
-    display         : flex      ;
-    align-items     : center    ;
-    justify-content : center    ;
-    margin-left     : 7vw       ;
-    margin-right    : 7vw       ;
-    text-align      : center    ;  
-}
-
-.grosTitre{
-    margin          : 0                      ;
-    font-size       : 56px                   ;
-    font-style      : semi-bold              ;
-    font-family     : Public Sans, sans-serif;
-    margin-top      : 13vh                   ;
-}
-
-.texteSecondaire{
-    margin      : 0                       ;
-    margin-top  : 2vh                     ;
-    font-weight : 400                     ;
-    font-size   : 20px                    ;
-    color       :#979797                ;
-    font-family : Public Sans, sans-serif ;
-
-}
-
-/* Accueil : BOUTON REDIRIGEANT VERS LA PAGE boutique.html */
-.container-el button a{
-    text-decoration : none      ;
-    color           :black    ;
-    font-size       : 16px      ;
-    font-weight     : 600       ;    
-}
-
-.container-el button{   
-    width           : 194px             ;
-    height          : 50px              ;   
-    border          : 1px solid black ;
-    background      : none              ;
-    margin-left     : auto              ;
-    margin-right    : auto              ;
-    margin-top      : 3vh               ;
-}
-
-/* Accueil - ADAPATION DE L'IMAGE */
-.container-el img{
-    width   : calc(100% - 8vw)  ;
-    margin  : 30px 4vw 0        ;
-}
-
-/* Accueil : AFFICHAGE MARQUE */
-.container-el .sponso{
-    display             : flex         ;
-    flex-direction      : row          ;
-    justify-content     : space-between;
-    align-items         : center       ;
-    flex-wrap           : wrap         ;
-}
-
-.container-el .sponso img{
-    width       : 30vh      ;
-    flex-wrap   : wrap      ;
-    align-items : center    ;
-}
 
 /* MEDIA QUERY */
 @media screen and (max-width : 940px) {
@@ -350,32 +263,4 @@ span.desactivated{
         
     }
 
-    .container-el p.grosTitre{
-        margin-top:4vh;
-    }
-
-    .container-el p.texteSecondaire{
-        margin-top:5vh;
-    }
-
-    .container-el button{
-        margin-top:2vh;
-    }
-    
-    .container-el img{
-        margin:0;
-        margin-top : 4vh;
-        width: 100%;
-    }
-
-    .container-el .sponso{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .container-el .sponso img{
-        width: 20vh;
-    }
 }

@@ -161,6 +161,7 @@ button{
 }
 
 .buypop.visible{
+    z-index: 20;
     align-items: center;
     display: block;
     position: fixed;
@@ -271,6 +272,7 @@ button{
 }
 
 .achatpop.visible{
+    z-index: 20;
     align-items: center;
     display: block;
     position: fixed;
