@@ -200,7 +200,7 @@ span.desactivated{
 }
 
 /* Accueil : BOUTON REDIRIGEANT VERS LA PAGE boutique.html */
-.container-el form{
+.container-el a{
     text-decoration : none      ;
     color           :black    ;
     font-size       : 16px      ;
