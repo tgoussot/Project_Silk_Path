@@ -219,6 +219,7 @@ span.desactivated{
     width           : 194px             ;
     height          : 50px              ;   
     border          : 1px solid black ;
+    color           :black            ;
     background      : none              ;
     font-weight     : bold              ;
     font-size       : 17px              ;
