@@ -23,6 +23,8 @@ Nos prix battent toute concurrence ! Vous ne trouverez rien de mieux ailleurs :
 <li>e̶͎̔t̷̟͑ ̵̝̒m̴̧͛ê̸̪̎m̷̜̾ḙ̸́ ̸̘͑d̷̲͊e̸̝̍ ̸̼̏v̸̱̈ę̶́̅r̷̥̀i̶̺͋t̸̰͒ȧ̷̹b̴͙͠l̵͈̇ȩ̸̏s̵̤̕ ̴̱̿c̶̜̏h̵̼͆a̸̖͘m̵̢͌ĕ̷̱a̸̻͑u̷̮̒x̸̡͠ ̴͉͛v̷͎̊e̶͎͝r̷͈͒t̴̨͗s̴͉̀ !</li>
 </ul>
 
+<a href="https://tgoussot.github.io/Project_Silk_Path/">Lien du projet</a>
+
 <div id='pldg'/>
 
 ## Palettes, logo et design général
