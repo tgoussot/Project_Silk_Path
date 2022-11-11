@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="favicon.ico">
     <title>SilkPath</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="style/pageitem.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/navabr.css">
-    <link rel="shortcut icon" type="x-icon" href="image/favicon.ico">
+    <link rel="shortcut icon" type="icon" href="image/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +17,7 @@
 
         <nav class="menuNavigation">
 
-            <a href="index.html" class="marque"><p>Silk</p>&nbsp<p> Path</p></a>
+            <a href="index.html" class="marque"><p>Silk </p> <p> Path</p></a>
     
                 <div class="container" id="burger">
                     <div class="elementGauche">
@@ -42,7 +41,7 @@
                         <a href="#" class="dernierEl">Login</a>    
                     </div> 
                 </div>
-                <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30">
+                <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30" alt="menu burger">
                 <script>
                     function deroulant(){
                         document.getElementById("burger").classList.toggle("activederoulant");
@@ -59,12 +58,12 @@
 
             <div class="imgarticle">
                 <div class="grosseimage" id="0">
-                    <button  class="bnext2"><img class="bnext" onclick="next()" src="image/Vector.png" alt=""></button>
+                    <button  class="bnext2"><img class="bnext" onclick="next()" src="image/Vector.png" alt="image de l'article"></button>
                 </div>
                 <div class="listeimg">
-                    <button onclick="img1()" class="bc"><img src="image/blanc/Backpack-back.png" alt="" class="img1" id="1"></button>
-                    <button onclick="img2()" class="bc"><img src="image/blanc/Backpack-front.png" alt="" class="img2" id="2"></button>
-                    <button onclick="img3()" class="bc"><img src="image/blanc/Backpack-porter.png" alt="" class="img3" id="3"></button>  
+                    <button onclick="img1()" class="bc"><img src="image/blanc/Backpack-back.png" alt="image de l'article" class="img1" id="1"></button>
+                    <button onclick="img2()" class="bc"><img src="image/blanc/Backpack-front.png" alt="image de l'article" class="img2" id="2"></button>
+                    <button onclick="img3()" class="bc"><img src="image/blanc/Backpack-porter.png" alt="image de l'article" class="img3" id="3"></button>  
                 </div>
             </div>
 
@@ -126,11 +125,11 @@
                     <div class="toppopb" >
                         <div class="none"></div>
                             <span class="txtpanier"><strong>L'article a bien été ajouté au panier</strong> </span>
-                        <div class="rmbuy none" onclick="removebuy()"> <img class="croix" src="image/croix.png" alt=""></div>
+                        <div class="rmbuy none" onclick="removebuy()"> <img class="croix" src="image/croix.png" alt="croix de fermeture"></div>
                     </div>
                     <div class="recap">
                         <div class="imgbox">
-                            <img class="imgrecap" id="imgrecap" src="image/blanc/Backpack-front.png" alt="">
+                            <img class="imgrecap" id="imgrecap" src="image/blanc/Backpack-front.png" alt="image de l'article">
                         </div>
                         <div class="recaptxt">
                             <div class="speccommande">
@@ -160,7 +159,7 @@
                     <div class="toppopb" >
                         <div class="none"></div>
                             <span class="txtpanier"><strong>Acheter l'article</strong> </span>
-                        <div class="rmachat none" onclick="removeachat()"> <img class="croix" src="image/croix.png" alt=""></div>
+                        <div class="rmachat none" onclick="removeachat()"> <img class="croix" src="image/croix.png" alt="croix de fermeture"></div>
                     </div>   
                     <div class="recaptxt rt1">
                         <div class="rt2">
@@ -197,8 +196,8 @@
               </p>
               <form>
                   <div class="inputContainer">
-                      <input type="text" class="input" required>
-                      <label for="" class="label">Adresse E-mail</label>
+                      <input type="text" class="input" id="mail" required>
+                      <label for="mail" class="label">Adresse E-mail</label>
                   </div>
                   <div class="valider">
                     <button class="btn41-43 btn-43">
