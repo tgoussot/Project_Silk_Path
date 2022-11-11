@@ -12,7 +12,7 @@
     <title>SilkPath</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" type="x-icon" href="image/favicon.ico">
+    <link rel="shortcut icon" href="image/favicon.ico">
     <link rel="stylesheet" href="style/navabr.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
 
@@ -24,7 +24,7 @@
 
   <nav class="menuNavigation">
 
-    <a href="index.html" class="marque"><p>Silk</p>&nbsp<p> Path</p></a>
+    <a href="index.html" class="marque"><p>Silk</p><p> Path</p></a>
 
         <div class="container" id="burger">
             <div class="elementGauche">
@@ -48,7 +48,7 @@
                 <a href="#" class="dernierEl">Login</a>    
             </div> 
         </div>
-        <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30">
+        <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30" alt="menu">
         <script>
             function deroulant(){
                 document.getElementById("burger").classList.toggle("activederoulant");
@@ -70,13 +70,13 @@
 
           <div class="Article">
 
-            <img class="Image1" src="https://ih1.redbubble.net/image.759212488.2741/flat,750x1000,075,f.u1.jpg" alt="Image Article 1"/>
+            <img class="Image1" src="https://ih1.redbubble.net/image.759212488.2741/flat,750x1000,075,f.u1.jpg" alt="Image Article 1">
             
             <div class="description">
 
               <h2>Chameau en porcelaine</h2>
-              <p style="font-size:14">Taille : TailleUnique</p>
-              <p style="font-size:14">Quantité : 1</p>
+              <p style="font-size:14px">Taille : TailleUnique</p>
+              <p style="font-size:14px">Quantité : 1</p>
               <h2>12.70 E</h2>
 
               <div class="remove1">
@@ -93,13 +93,13 @@
 
           <div class="Article">
 
-            <img class="Image1" src="https://ih1.redbubble.net/image.759212488.2741/flat,750x1000,075,f.u1.jpg" alt="Image Article 2"/>
+            <img class="Image1" src="https://ih1.redbubble.net/image.759212488.2741/flat,750x1000,075,f.u1.jpg" alt="Image Article 2">
 
             <div class="description">
 
               <h2>Chameau empaillé</h2>
-              <p style="font-size:14">Taille : TailleUnique</p>
-              <p style="font-size:14">Quantité : 2</p>
+              <p style="font-size:14px">Taille : TailleUnique</p>
+              <p style="font-size:14px">Quantité : 2</p>
               <h2>9987 E</h2>
 
               <div class="remove1">
@@ -143,13 +143,9 @@
             </div>
 
             <div>
-
-              <button class="bouton">
-
-                <p style="color: white;">Continuer les achats</p>
-
-              </button>
-
+              <form action="boutique.html">
+                <button class="bouton" style="color: white; width: 200px; height: 40px; align-items: center; justify-content: center;" >Continuer les achats</button>
+              </form>
             </div>
 
           </div>
@@ -221,7 +217,7 @@
               <form>
                   <div class="inputContainer">
                       <input type="text" class="input" required>
-                      <label for="" class="label">Adresse E-mail</label>
+                      <label  class="label">Adresse E-mail</label>
                   </div>
                   <div class="valider">
                     <button class="btn41-43 btn-43">
@@ -260,7 +256,10 @@
                   </ul>
               </div>
           </div>
+        
   </footer>
+  </div>
+  
 </body>
 
 

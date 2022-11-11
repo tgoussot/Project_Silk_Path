@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Silk Path - Accueil</title>
     <link rel="stylesheet" type="text/css" href="style/index.css">
-    <link rel="shortcut icon" type="x-icon" href="image/favicon.ico">
+    <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style/footer.css">
 
 </head>
 <body>
+<!-- NAVBAR -->
     <nav class="menuNavigation">
-
-        <a href="#" class="marque"><p>Silk</p>&nbsp<p> Path</p></a>
+        <a href="#" class="marque"><p>Silk</p><p> Path</p></a>
 
             <div class="container" id="burger">
                 <div class="elementGauche">
@@ -34,25 +34,26 @@
                     <a href="#" class="dernierEl">Login</a>    
                 </div> 
             </div>
-            <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30">
-            <script>
-                function deroulant(){
-                    document.getElementById("burger").classList.toggle("activederoulant");
-                }
-            </script>
+        <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30" alt="menu burger">
     </nav>
 
+<!-- partie central -->
     <div class="container-el">
-        <p class="grosTitre">Bienvenue sur Project Silk Path !</p>
+        <p class="grosTitre">Bienvenue sur Silk Path !</p>
         <p class="texteSecondaire">Découvrez des produits nés de l'imagination même des créateurs, prêts à vous offrir les meilleurs expériences ! Nos nouvelles collections viennent à peine de sortir !</p>
-        <button><a href="boutique.html" target="_blank"><strong>LA BOUTIQUE</strong></a></button>
-        <img src="image/accueil/accueil2.png">
+        <!-- <button><a href="boutique.html" target="_blank"><strong>LA BOUTIQUE</strong></a></button> -->
+
+        <form action="boutique.html" target="_blank">
+                <input type="button" value="Boutique">
+        </form>
+
+        <img src="image/accueil/accueil2.png" alt="chameaux vert avec présentation du site">
         <div class="sponso">
-            <img src="image/accueil/marque_livreur2.png">
-            <img src="image/accueil/marque_tor.png">
-            <img src="image/accueil/marque_vendeur.png">            
-            <img src="image/accueil/marque_hessk.png">
-            <img src="image/accueil/marque_matelas.png">
+            <img src="image/accueil/marque_livreur2.png" alt="slogan cigarette et delivroo">
+            <img src="image/accueil/marque_tor.png" alt="image d'un onion représentant Tor BROWSER" >
+            <img src="image/accueil/marque_vendeur.png" alt="personne avec un chameaux relié par un texte écrit en arabe">            
+            <img src="image/accueil/marque_hessk.png" alt="elon hessk qui fume">
+            <img src="image/accueil/marque_matelas.png" alt="sponsor marque matcamel & co">
         </div>
     </div>
         <!-- footer -->
@@ -64,8 +65,8 @@
               </p>
               <form>
                   <div class="inputContainer">
-                      <input type="text" class="input" required>
-                      <label for="" class="label">Adresse E-mail</label>
+                      <input type="text" class="input" id="mail" required>
+                      <label for="mail" class="label">Adresse E-mail</label>
                   </div>
                   <div class="valider">
                     <button class="btn41-43 btn-43">
@@ -105,5 +106,10 @@
               </div>
           </div>
   </footer>
+<script>
+    function deroulant(){
+        document.getElementById("burger").classList.toggle("activederoulant");
+    }
+</script>
 </body> 
 </html>

@@ -184,7 +184,7 @@ span.desactivated{
 .grosTitre{
     margin          : 0                      ;
     font-size       : 56px                   ;
-    font-style      : semi-bold              ;
+    font-weight     : bold                   ;
     font-family     : Public Sans, sans-serif;
     margin-top      : 13vh                   ;
 }
@@ -200,21 +200,30 @@ span.desactivated{
 }
 
 /* Accueil : BOUTON REDIRIGEANT VERS LA PAGE boutique.html */
-.container-el button a{
+.container-el form{
     text-decoration : none      ;
     color           :black    ;
     font-size       : 16px      ;
-    font-weight     : 600       ;    
+    font-weight     : 600       ;   
 }
 
-.container-el button{   
+.container-el input{   
     width           : 194px             ;
     height          : 50px              ;   
     border          : 1px solid black ;
     background      : none              ;
-    margin-left     : auto              ;
+    margin-left     : 4vw               ;
     margin-right    : auto              ;
     margin-top      : 3vh               ;
+    font-weight     : bold              ;
+    font-size       : 17px              ;
+    font-family     : sans-serif        ;
+}
+
+.container-el input:hover{
+    background-color: black           ;
+    color           : white           ;
+    transition      : 0.2s              ;
 }
 
 /* Accueil - ADAPATION DE L'IMAGE */
