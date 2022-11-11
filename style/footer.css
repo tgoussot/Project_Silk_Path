@@ -172,18 +172,6 @@ body{
   color: black;
 }
 
-@media screen and (max-width:767px)
-{
-  .footer
-  {
-    padding-bottom:0;
-  }
-  .footer .copyright-text,.footer 
-  {
-    text-align:center;
-  }
-}
-
 @media screen and (max-width:820px){
   .footer{
     margin-left: 5%;
