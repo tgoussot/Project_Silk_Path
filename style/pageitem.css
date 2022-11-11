@@ -1,5 +1,3 @@
-
-
 .corps{
     display: flex;
     flex-direction: column;
@@ -325,7 +323,8 @@ button{
     margin-top: 5%;
 }
 
-@media screen and (max-width: 1250px){
+ @media screen and (max-width: 1250px){
+
     .boutonsecondaire{
         flex-direction: column;
     }
@@ -333,9 +332,9 @@ button{
     .btnsmin{
         width: 50%;
     }
-}
+} 
 
-@media screen and (max-width: 1024px){
+ @media screen and (max-width: 1050px){
 
     .page{
         grid-template-columns: 65% 35%;
@@ -375,7 +374,9 @@ button{
 }
 
 
-@media screen and (max-width: 720px){
+@media  screen and (max-width:720px){
+
+
     .page{
         display: flex;
         flex-direction: column;
@@ -384,14 +385,12 @@ button{
     .imgarticle{
         left: 50%;
         width: 80vw;
-        height: 115vh;
+        height: 90vw;
     }
 
     .infoproduit{
         margin: 3%;
     }
-
-
 
     .data{
         flex-direction: column-reverse;
@@ -471,3 +470,6 @@ button{
         padding-bottom: 10px;
     }
 }
+
+
+
