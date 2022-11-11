@@ -4,6 +4,14 @@ body{
     color   :black ;
 }
 
+/*************** SOMMAIRE ********************/
+/* I  . NAVBAR                               */
+/* II . BAS DE PAGE (texte + boutton + image)*/
+/* III. MEDIA QUERY                          */
+/*********************************************/
+
+
+/* Accueil : NAVBAR */
 .menuNavigation{
     
     position            : sticky             ;
@@ -39,7 +47,7 @@ body{
 }
 
 .marque p{
-    margin:0;
+    margin :    0  ;
 }
 
 div.elementGauche{
@@ -62,7 +70,6 @@ div.elementGauche{
     
 }
 
-
 .elementGauche a::after {
     content: "";
     display          : block                   ;
@@ -74,15 +81,15 @@ div.elementGauche{
     transform-origin : left                    ;
     background       : #333                  ;
     transition       : transform 0.3s ease-out ;
-  }
+}
   
-  .elementGauche a:hover::after{
+.elementGauche a:hover::after{
     transform    : scaleX(1) ;
-  }
+}
 
 div.elementDroite{
     margin-left  : auto   ;
-    margin-right: 50px    ;
+    margin-right : 50px   ;
     display      : flex   ;
     align-items  : center ;
 }
@@ -90,7 +97,7 @@ div.elementDroite{
 
 div.elementDroite a{
     text-decoration : none         ;
-    margin-left     :80px         ;
+    margin-left     : 80px         ;
     font-size       : 17px         ;
     font-weight     : 400          ;
     color           : black      ;
@@ -134,93 +141,93 @@ span.desactivated{
 }
 
 .container{
-    display:flex;
-    width: 100%;
+    display :   flex    ;
+    width   :  100%;    ;
 }
-
-
 
 .burger{
-    display:none;
+    display :   none    ;
 }
 
+/* Accueil : CONTENEUR QUI CONTIENT TOUT LE BAS DE LA PAGE */
 .container-el{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
+    display             : flex               ;
+    flex-direction      : column             ;
+    width               :        100%        ;
     -webkit-user-select : none               ;
     -moz-user-select    : none               ;
     -ms-user-select     : none               ;
     user-select         : none               ;
 }
 
+/* Accueil : TEXTE PRESENTATION + TITRE */
 .container-el p{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-left:7vw;
-    margin-right:7vw;
-    text-align: center;
-    
-
+    display         : flex      ;
+    align-items     : center    ;
+    justify-content : center    ;
+    margin-left     : 7vw       ;
+    margin-right    : 7vw       ;
+    text-align      : center    ;  
 }
 
 .grosTitre{
-    margin:0;
-    font-size: 56px;
-    font-style:semi-bold;
-    font-family: Public Sans, sans-serif;
-    margin-top:13vh;
+    margin          : 0                      ;
+    font-size       : 56px                   ;
+    font-style      : semi-bold              ;
+    font-family     : Public Sans, sans-serif;
+    margin-top      : 13vh                   ;
 }
 
 .texteSecondaire{
-    margin:0;
-    margin-top:2vh;
-    font-weight: 400;
-    font-size:20px;
-    color:#979797;
-    font-family: Public Sans, sans-serif;
+    margin      : 0                       ;
+    margin-top  : 2vh                     ;
+    font-weight : 400                     ;
+    font-size   : 20px                    ;
+    color       :#979797                ;
+    font-family : Public Sans, sans-serif ;
 
 }
 
-
+/* Accueil : BOUTON REDIRIGEANT VERS LA PAGE boutique.html */
 .container-el button a{
-    text-decoration: none;
-    color:black;
-    font-size: 16px;
-    font-weight: 600;
-    
+    text-decoration : none      ;
+    color           :black    ;
+    font-size       : 16px      ;
+    font-weight     : 600       ;    
 }
 
 .container-el button{   
-    width:194px;
-    height: 50px;
-    border:1px solid black;
-    background:none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:3vh;
+    width           : 194px             ;
+    height          : 50px              ;   
+    border          : 1px solid black ;
+    background      : none              ;
+    margin-left     : auto              ;
+    margin-right    : auto              ;
+    margin-top      : 3vh               ;
 }
 
+/* Accueil - ADAPATION DE L'IMAGE */
 .container-el img{
-    width: calc(100% - 8vw);
-    margin: 30px 4vw 0;
+    width   : calc(100% - 8vw)  ;
+    margin  : 30px 4vw 0        ;
 }
 
+/* Accueil : AFFICHAGE MARQUE */
 .container-el .sponso{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display             : flex         ;
+    flex-direction      : row          ;
+    justify-content     : space-between;
+    align-items         : center       ;
+    flex-wrap           : wrap         ;
 }
 
 .container-el .sponso img{
-    width: 30vh;
-    flex-wrap: wrap;
-    align-items: center;
+    width       : 30vh      ;
+    flex-wrap   : wrap      ;
+    align-items : center    ;
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width : 940px) {
     
 
