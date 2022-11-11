@@ -3,6 +3,7 @@
 ## Table des matières 
 * [Présentation générale](#presentation)
 * [Palettes, logo et design général](#pldg)
+* [Partenaires et fournisseurs](#pf)
 * [Contributeurs](#contributor)
 *******
 
@@ -35,12 +36,19 @@ Silk Path® reste malgré tout un refuge nécessitant des produits et une image 
 
 Silk Path est désormais ouvert et prêt à l'emploi !
 
+<div id='pf'/>
+
+## Partenaires et fournisseurs
+
+Silk Path vous propose la qualité et rien d'autre que la qualité ! Nos fournisseurs seront prêts à tout pour vous satisfaire <strong>jusqu'au bout</strong> !
+![all icons](https://user-images.githubusercontent.com/113182098/201242843-fcc7e7fc-f548-4728-8fa7-c2137885639b.png)
+
 <div id='contributor'/> 
 
 ## Contributeurs
 
 Ce projet a été mené à bien grâce à : 
-* Dalia NEZZAR (Logos, images et footer)
+* Dalia NEZZAR (README, logos, images et footer)
 * Ambre MAJOUREL (Page du panier)
 * Calixte REYMOND (Page d'article)
 * Théo GOUSSOT (Bar de navigation et page d'accueil)
