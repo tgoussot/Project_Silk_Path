@@ -361,4 +361,8 @@ span.desactivated{
         width: 20vh;
     }
 
+    .footer{
+        position:relative;
+    }
+
 }
