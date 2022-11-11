@@ -119,11 +119,6 @@ body{
   display:inline-block
 }
 
-.copyright-text
-{
-  margin:0;
-}
-
 .content{
   margin-left: 10px;
   margin-right: 10px;
@@ -177,17 +172,6 @@ body{
   color: black;
 }
 
-@media (max-width:991px)
-{
-  .footer [class^=col-]
-  {
-    margin-bottom:30px;
-  }
-
-  .footer{
-    line-height:normal;
-  }
-}
 @media screen and (max-width:767px)
 {
   .footer
