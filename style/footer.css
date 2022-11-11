@@ -184,8 +184,12 @@ body{
   {
     margin-bottom:30px
   }
+
+  .footer{
+    line-height:normal;
+  }
 }
-@media (max-width:767px)
+@media screen and (max-width:767px)
 {
   .footer
   {

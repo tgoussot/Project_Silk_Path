@@ -184,7 +184,7 @@ span.desactivated{
 .grosTitre{
     margin          : 0                      ;
     font-size       : 56px                   ;
-    font-style      : semi-bold              ;
+    font-weight     : bold                   ;
     font-family     : Public Sans, sans-serif;
     margin-top      : 13vh                   ;
 }
