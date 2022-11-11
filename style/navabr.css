@@ -80,7 +80,7 @@ div.elementGauche{
     height           : 1px                     ;
     transform        : scaleX(0)               ;
     transform-origin : left                    ;
-    background       : #333                  ;
+    background       : white                 ;
     transition       : transform 0.3s ease-out ;
 }
   
@@ -115,7 +115,7 @@ div.elementDroite a::after{
     height           : 1px                     ;
     transform        : scaleX(0)               ;
     transform-origin : left                    ;
-    background       : rgb(84, 85, 82)       ;
+    background       : white                 ;
     transition       : transform 0.2s ease-out ;
 }
   
