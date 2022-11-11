@@ -99,15 +99,15 @@ body{
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
 }
 .footer-links li
 {
-  display:block
+  display:block;
 }
 .footer-links a
 {
-  color:#737373
+  color:#737373;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -121,7 +121,7 @@ body{
 
 .copyright-text
 {
-  margin:0
+  margin:0;
 }
 
 .content{
@@ -181,7 +181,7 @@ body{
 {
   .footer [class^=col-]
   {
-    margin-bottom:30px
+    margin-bottom:30px;
   }
 
   .footer{
@@ -192,11 +192,11 @@ body{
 {
   .footer
   {
-    padding-bottom:0
+    padding-bottom:0;
   }
   .footer .copyright-text,.footer 
   {
-    text-align:center
+    text-align:center;
   }
 }
 
