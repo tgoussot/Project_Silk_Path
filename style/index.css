@@ -1,16 +1,27 @@
+/* Développé par Théo GOUSSOT S1 A2    */
+/* CSS utilisé pour la page index.html */
+
 body{
     margin  : 0      ;
     padding : 0      ;
     color   :black ;
 }
 
+/*************** SOMMAIRE ********************/
+/* I  . NAVBAR                               */
+/* II . BAS DE PAGE (texte + boutton + image)*/
+/* III. MEDIA QUERY                          */
+/*********************************************/
+
+
+/* Accueil : NAVBAR */
 .menuNavigation{
     
     position            : sticky             ;
     display             : flex               ;
     align-items         : center             ;  
-    padding-top         : 18px               ;
-    padding-bottom      : 18px               ;    
+    padding-top         : 25px               ;
+    padding-bottom      : 25px               ;    
     width               : 100%               ;
     background-color    : whitesmoke       ;
     border-bottom       : 1px solid grey   ;
@@ -19,7 +30,9 @@ body{
     -moz-user-select    : none               ;
     -ms-user-select     : none               ;
     user-select         : none               ;
-    font-family         : 'Inter', sans-serif;;
+    font-family         : 'Inter', sans-serif;
+    box-shadow          : 0px 1px 10px black;
+
 }
 .marque{
     display         : flex  ;
@@ -38,7 +51,7 @@ body{
 }
 
 .marque p{
-    margin:0;
+    margin :    0  ;
 }
 
 div.elementGauche{
@@ -61,7 +74,6 @@ div.elementGauche{
     
 }
 
-
 .elementGauche a::after {
     content: "";
     display          : block                   ;
@@ -73,15 +85,15 @@ div.elementGauche{
     transform-origin : left                    ;
     background       : #333                  ;
     transition       : transform 0.3s ease-out ;
-  }
+}
   
-  .elementGauche a:hover::after{
+.elementGauche a:hover::after{
     transform    : scaleX(1) ;
-  }
+}
 
 div.elementDroite{
     margin-left  : auto   ;
-    margin-right: 50px    ;
+    margin-right : 50px   ;
     display      : flex   ;
     align-items  : center ;
 }
@@ -89,7 +101,7 @@ div.elementDroite{
 
 div.elementDroite a{
     text-decoration : none         ;
-    margin-left     :80px         ;
+    margin-left     : 80px         ;
     font-size       : 17px         ;
     font-weight     : 400          ;
     color           : black      ;
@@ -133,13 +145,230 @@ span.desactivated{
 }
 
 .container{
-    display:flex;
-    width: 100%;
+    display :   flex    ;
+    width   :  100%;    ;
 }
 
+.burger{
+    display :   none    ;
+}
+
+/* Accueil : CONTENEUR QUI CONTIENT TOUT LE BAS DE LA PAGE */
+.container-el{
+    display             : flex               ;
+    flex-direction      : column             ;
+    width               :        100%        ;
+    -webkit-user-select : none               ;
+    -moz-user-select    : none               ;
+    -ms-user-select     : none               ;
+    user-select         : none               ;
+}
+
+/* Accueil : TEXTE PRESENTATION + TITRE */
+.container-el p{
+    display         : flex      ;
+    align-items     : center    ;
+    justify-content : center    ;
+    margin-left     : 7vw       ;
+    margin-right    : 7vw       ;
+    text-align      : center    ;  
+}
+
+.grosTitre{
+    margin          : 0                      ;
+    font-size       : 56px                   ;
+    font-style      : semi-bold              ;
+    font-family     : Public Sans, sans-serif;
+    margin-top      : 13vh                   ;
+}
+
+.texteSecondaire{
+    margin      : 0                       ;
+    margin-top  : 2vh                     ;
+    font-weight : 400                     ;
+    font-size   : 20px                    ;
+    color       :#979797                ;
+    font-family : Public Sans, sans-serif ;
+
+}
+
+/* Accueil : BOUTON REDIRIGEANT VERS LA PAGE boutique.html */
+.container-el button a{
+    text-decoration : none      ;
+    color           :black    ;
+    font-size       : 16px      ;
+    font-weight     : 600       ;    
+}
+
+.container-el button{   
+    width           : 194px             ;
+    height          : 50px              ;   
+    border          : 1px solid black ;
+    background      : none              ;
+    margin-left     : auto              ;
+    margin-right    : auto              ;
+    margin-top      : 3vh               ;
+}
+
+/* Accueil - ADAPATION DE L'IMAGE */
+.container-el img{
+    width   : calc(100% - 8vw)  ;
+    margin  : 30px 4vw 0        ;
+}
+
+/* Accueil : AFFICHAGE MARQUE */
+.container-el .sponso{
+    display             : flex         ;
+    flex-direction      : row          ;
+    justify-content     : space-between;
+    align-items         : center       ;
+    flex-wrap           : wrap         ;
+}
+
+.container-el .sponso img{
+    width       : 30vh      ;
+    flex-wrap   : wrap      ;
+    align-items : center    ;
+}
+
+/* MEDIA QUERY */
 @media screen and (max-width : 940px) {
-    .container{
-        display:none;
+    
+
+    div.elementGauche{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        align-items: baseline;
+        width: 100px;
+    }
+
+    div.elementGauche a{
+        margin:0;
+        margin-bottom:20px;
+        color:white;
+    }
+
+    div.elementGauche a.premierEl{
+        margin-top:1vh;
+    }
+
+    div.elementGauche .loupe{
+        margin:0;
+        margin-bottom:20px;
+    }
+
+    div.elementGauche .loupe svg{
+        color:red
+    }
+
+    div.elementGauche a::after{
+        background: white;
+    }
+
+
+    div.elementDroite{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        align-items: baseline;
+        width: 100px ;
+    }
+
+    div.elementDroite a{
+        margin:0;
+        color:white;
+    }
+
+    div.elementDroite a.dernierEl{
+        margin-bottom:1vh;
+    }
+
+
+    div.elementDroite a::after{
+        background: white;
     }
     
+    span.panier{
+        margin-bottom: 20px;
+        color:white;
+    }
+    span.panier svg{
+        color:rgb(250, 0, 0);
+    }
+
+
+
+    .menuNavigation{
+        background-color:black;
+        transition : all 0.5s;
+    }
+
+    .container{
+        
+        display: none;
+    }
+    .container{        
+        margin:0;
+        position:absolute;
+        top:100%;
+
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+
+        height: 0px;
+        background-color: #232525;
+        transition: .5s ease-out height;
+    }
+    .container.activederoulant {
+        height: 240px;
+    }      
+
+    .marque{
+        color:white;
+    }
+
+    .burger{
+        display:block;
+        margin-left:auto;
+        margin-right:50px;
+    }
+
+    .container-el p{
+        margin-left:7vw;
+        margin-right:7vw;
+        text-align: center;
+        
+    }
+
+    .container-el p.grosTitre{
+        margin-top:4vh;
+    }
+
+    .container-el p.texteSecondaire{
+        margin-top:5vh;
+    }
+
+    .container-el button{
+        margin-top:2vh;
+    }
+    
+    .container-el img{
+        margin:0;
+        margin-top : 4vh;
+        width: 100%;
+    }
+
+    .container-el .sponso{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-el .sponso img{
+        width: 20vh;
+    }
 }

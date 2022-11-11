@@ -1,22 +1,26 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Silk Path - Accueil</title>
     <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="shortcut icon" type="x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+
 </head>
 <body>
-
     <nav class="menuNavigation">
 
         <a href="#" class="marque"><p>Silk</p>&nbsp<p> Path</p></a>
 
-            <div class="container">
+            <div class="container" id="burger">
                 <div class="elementGauche">
-                    <a href="#">Shop</a>
-                    <a href="#">Stories</a>
-                    <a href="#">About</a>
+                    <a href="boutique.html" target="_blank" class="premierEl">Boutique</a>
+                    <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">Histoire</a>
+                    <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">A propos</a>
                     <span class="loupe">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" height="16px" role="img" file = "none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" height="16px" role="img" fill = "currentColor">
                             <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
                         </svg><span class="desactivated">Search</span></span>
     
@@ -24,13 +28,82 @@
     
                 <div class="elementDroite">
                     <span class="panier">    
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px" role="img" file = "none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px" role="img" fill = "currentColor">
                     <path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"/>
                     </svg>3</span>
-                    <a href="#">Login</a>
-    
+                    <a href="#" class="dernierEl">Login</a>    
                 </div> 
             </div>
+            <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30">
+            <script>
+                function deroulant(){
+                    document.getElementById("burger").classList.toggle("activederoulant");
+                }
+            </script>
     </nav>
+
+    <div class="container-el">
+        <p class="grosTitre">Bienvenue sur Project Silk Path !</p>
+        <p class="texteSecondaire">Découvrez des produits nés de l'imagination même des créateurs, prêts à vous offrir les meilleurs expériences ! Nos nouvelles collections viennent à peine de sortir !</p>
+        <button><a href="boutique.html" target="_blank"><strong>LA BOUTIQUE</strong></a></button>
+        <img src="image/accueil/accueil2.png">
+        <div class="sponso">
+            <img src="image/accueil/marque_livreur2.png">
+            <img src="image/accueil/marque_tor.png">
+            <img src="image/accueil/marque_vendeur.png">            
+            <img src="image/accueil/marque_hessk.png">
+            <img src="image/accueil/marque_matelas.png">
+        </div>
+    </div>
+        <!-- footer -->
+  <footer class="footer">
+          <div class="content">
+              <h5>Inscrivez-vous à la Newsletter !</h5>
+              <p>
+                  Soyez au courant de nos dernières nouveautés, peut-être seriez vous chanceux d'être présent à une vente limitée ?!
+              </p>
+              <form>
+                  <div class="inputContainer">
+                      <input type="text" class="input" required>
+                      <label for="" class="label">Adresse E-mail</label>
+                  </div>
+                  <div class="valider">
+                    <button class="btn41-43 btn-43">
+                      Sign Up
+                    </button>
+                  </div>
+              </form>
+          </div>
+          <div class="content-footer">
+              <div class="content">
+                  <h6>Boutique</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Homme</a></li>
+                      <li><a href="#">Femme</a></li>
+                      <li><a href="#">Enfant</a></li>
+                      <li><a href="#">Accessoires</a></li>
+                      <li><a href="#">Décorations</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>Aide</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Centre d'aide</a></li>
+                      <li><a href="#">Suivi de commande</a></li>
+                      <li><a href="#">Tableau des Tailles</a></li>
+                      <li><a href="#">Retour et Garantie</a></li>
+                      <li><a href="#">Contactez-Nous</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>A Propos</h6>
+                  <ul class="footer-links">
+                  <li><a href="#">A Propos de Nous</a></li>
+                  <li><a href="#">Responsabilité</a></li>
+                  <li><a href="#">Apprenez notre histoire</a></li>
+                  </ul>
+              </div>
+          </div>
+  </footer>
 </body> 
 </html>

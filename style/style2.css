@@ -223,7 +223,6 @@ body {
 }
 
 .block_text .parametre {
-    background-color: green;
     border-radius: 100%;
     width: 3vw;
     height: 3vw;
@@ -246,6 +245,19 @@ body {
     margin-left: 0.5vw;
 }
 
+.nom a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.nom a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.nom a:hover{
+    color: green;
+}
 /* ========== Bouton load more ========== */
 
 .a_bottom {
