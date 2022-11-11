@@ -144,7 +144,7 @@ span.desactivated{
     margin-left : 30px     ;
 }
 
-.container{
+.menuNavigation .container{
     display :   flex    ;
     width   :  100%;    ;
 }
@@ -304,11 +304,11 @@ span.desactivated{
         transition : all 0.5s;
     }
 
-    .container{
+    .menuNavigation .container{
         
         display: none;
     }
-    .container{        
+    .menuNavigation .container{        
         margin:0;
         position:absolute;
         top:100%;
@@ -322,7 +322,7 @@ span.desactivated{
         background-color: #232525;
         transition: .5s ease-out height;
     }
-    .container.activederoulant {
+    .menuNavigation .container.activederoulant {
         height: 240px;
     }      
 
