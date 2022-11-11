@@ -217,3 +217,17 @@ body{
     line-height: 120%;
   }
 }
+
+@media screen and (max-width: 382px) {
+  h6.premierElement{
+    margin-top: 37.28px;
+  }
+  h6{
+    margin-top:0px;
+  }
+
+  ul.footer-links{
+    margin-bottom: 0px;
+  }
+
+}
