@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.container{
+.container01{
     display: grid;
     grid-template-columns: 30% 60% 1fr;
     margin-top: 3vw;
@@ -292,7 +292,7 @@ body {
 
 @media screen and (max-width: 730px){   
 
-    .container{
+    .container01{
         grid-template-columns: 100%;
         margin-top: 0;
     }
