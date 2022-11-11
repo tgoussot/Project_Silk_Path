@@ -24,7 +24,7 @@ Nos prix battent toute concurrence ! Vous ne trouverez rien de mieux ailleurs :
 
 <div id='pldg'/>
 
-##Palettes, logo et design général
+## Palettes, logo et design général
 
 Évidemment, afin de créer ce site-web, il était nécessaire pour nous de nous baser sur le design du professeur ainsi que notre thème général. De ce fait, des nuances vertes sont trouvables, malgré le design assez neutre.
 ![Silk Path](https://user-images.githubusercontent.com/113182098/201232673-b38e6070-fa20-4f67-af6c-a420ab418c52.png)
