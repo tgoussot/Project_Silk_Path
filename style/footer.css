@@ -17,7 +17,6 @@ body{
   margin-bottom: 17px;
 }
 
-/* Style the inputs */
 .inputContainer .input {
   position: absolute;
   top: 0px;
@@ -32,7 +31,6 @@ body{
   z-index: 1;
 }
 
-/* Hide the placeholder texts (a) */
 ::placeholder {
   color: transparent;
 }
@@ -198,7 +196,7 @@ body{
     margin-top: 37.28px;
   }
   h6{
-    margin-top:0px;
+    margin-top:5px;
   }
 
   ul.footer-links{
