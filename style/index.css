@@ -226,6 +226,10 @@ span.desactivated{
     font-family: 'Inter', sans-serif ;
 }
 
+.container-el input::value{
+    color : black;
+}   
+
 .container-el input:hover{
     background-color: black           ;
     color           : white           ;
