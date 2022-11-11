@@ -207,14 +207,19 @@ span.desactivated{
     font-weight     : 600       ;   
 }
 
+.container-el .buttonAlign{
+    display         : flex      ;
+    align-items     : center    ;
+    justify-content : center    ;
+    margin-top      : 4vh       ;
+    margin-bottom   : 1vh       ;
+}
+
 .container-el input{   
     width           : 194px             ;
     height          : 50px              ;   
     border          : 1px solid black ;
     background      : none              ;
-    margin-left     : 4vw               ;
-    margin-right    : auto              ;
-    margin-top      : 3vh               ;
     font-weight     : bold              ;
     font-size       : 17px              ;
     font-family     : sans-serif        ;
@@ -245,6 +250,10 @@ span.desactivated{
     width       : 30vh      ;
     flex-wrap   : wrap      ;
     align-items : center    ;
+}
+
+.footer{
+    line-height: normal;
 }
 
 /* MEDIA QUERY */
