@@ -204,7 +204,7 @@ span.desactivated{
     text-decoration : none      ;
     color           :black    ;
     font-size       : 16px      ;
-    font-weight     : 600       ;    
+    font-weight     : 600       ;   
 }
 
 .container-el button{   
@@ -212,9 +212,15 @@ span.desactivated{
     height          : 50px              ;   
     border          : 1px solid black ;
     background      : none              ;
-    margin-left     : auto              ;
+    margin-left     : 4vw               ;
     margin-right    : auto              ;
     margin-top      : 3vh               ;
+}
+
+.container-el button:hover{
+    background-color: black           ;
+    color           : white           ;
+    transition      : 0.2s              ;
 }
 
 /* Accueil - ADAPATION DE L'IMAGE */
